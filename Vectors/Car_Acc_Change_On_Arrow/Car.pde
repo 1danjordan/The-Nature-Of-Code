@@ -1,9 +1,9 @@
 class Car {
   PVector location, velocity, acceleration;
-  PVector up = new PVector(0,-0.001);
-  PVector down = new PVector(0,0.001);
-  PVector left = new PVector(-0.001,0);
-  PVector right = new PVector(0.001,0);
+  PVector up = new PVector(0,-0.01);
+  PVector down = new PVector(0,0.01);
+  PVector left = new PVector(-0.01,0);
+  PVector right = new PVector(0.01,0);
   float[] chars;
   float topspeed;
 
@@ -38,12 +38,10 @@ class Car {
     chars = acceleration.array();
   }
     
-/*    void keyReleased() {
-      if(arrow.mag() > 0) {
-        arrow.set(0,0);
-      }
+   void keyReleased() {
+      acceleration.set(0,0);
     }
-*/
+
   
   void display() {
     stroke(0);

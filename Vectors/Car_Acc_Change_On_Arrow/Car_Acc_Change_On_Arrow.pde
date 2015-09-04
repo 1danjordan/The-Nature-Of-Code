@@ -12,7 +12,9 @@ void draw() {
     car.update();
     car.keyPressed();
     car.setChars();
-//    car.keyReleased();
+    //Key Released not functioning as I wanted
+    //not too interested in working on it now
+    //car.keyReleased();
     car.checkEdges();
     car.display();
     text(car.chars[0], 50, 50);
